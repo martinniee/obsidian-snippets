@@ -1,0 +1,87 @@
+
+/* ===============自定义css============================== */
+
+/*  有序列表ol的列表项样式 */
+ol {
+	counter-reset: section;
+	list-style-type: none;
+}
+ol > li::before {
+	counter-increment: section;
+	content: counter(section);
+	background-color: #49b1f5;
+	color: white;
+	font-weight: bolder;
+	border-radius: 20.725em;
+	text-align: center;
+	display: inline-block;
+	height: 1.45em;
+	width: 1.45em;
+	font-size: 0.85em;
+	line-height: 1.45em;
+	margin-top: 4px;
+	margin-right: 0.4em;
+	float: left;
+}
+
+/* when hover mouse on, ratate 260deg with transition effct */
+ol > li:hover::before {
+	transform: rotate(360deg);
+	transition: all 0.3s ease-out;
+}
+
+
+/*====================================*/
+
+/*===============来自 Ob-themes-blue-topaz=============*/
+
+
+/* ul ul, */
+/* ol ul, */
+/* ul ol, */
+/* ol ol { */
+  /* position: relative; */
+/* } */
+
+/* ul ul::before, */
+/* ol ul::before, */
+/* ul ol::before, */
+/* ol ol::before { */
+  /* content: ''; */
+  /* border-left: 2px solid var(--background-modifier-border); */
+  /* position: absolute; */
+/* } */
+
+/* ul ul::before, */
+/* ol ul::before, */
+/* ul ol::before, */
+/* ol ol::before { */
+  /* left: -13px; */
+  /* top: 0; */
+  /* bottom: 0; */
+/* }  */
+
+/* li > p:not(.task-list-item) { */
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+/* } */
+  
+/* ul > li:not(.task-list-item) { */
+  /* padding-left: 0px; */
+  /* margin-bottom: 8px; */
+  /* padding-right: 0px; */
+  /* margin-block-start: 0.3em; */
+  /* border-left: none !important; */
+/* } */
+  
+/* ol { */
+  /* padding-inline-start: 2.1em; */
+  /* margin-left: 0px; */
+  /* margin-bottom: -9px; */
+/* } */
+  
+/* ol > li { */
+  /* margin-left: 2px; */
+  /* padding-left: 0px; */
+  /* border-left: none !important; */
+/* }  */

@@ -1,0 +1,26 @@
+﻿/* 预览效果下，行内代码块样式 */
+.markdown-rendered code {
+    color: red;
+    font-family: var(--font-monospace);
+    background-color: var(--background-primary-alt);
+    border-radius: 4px;
+    font-size: 0.85em;
+    padding: 4px 4px;
+}
+/* 编辑效果下，行内代码块样式 */
+.cm-s-obsidian span.cm-inline-code {
+    color: red !important;
+    font-size: 90%;
+    background-color: var(--background-primary-alt);
+    vertical-align: baseline;
+}
+/* 预览效果下，引用样式 */
+.markdown-preview-view blockquote {
+    background: #f8f2ff;
+    font-style: italic;
+    border: unset;
+    border-width: unset;
+    padding: 0 0 0 1.4375rem;
+    margin-inline-start: unset;
+    border-left: 2px solid #801eff;
+}

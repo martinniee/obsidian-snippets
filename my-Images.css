@@ -1,0 +1,29 @@
+/* Enlarge image on hover */
+.markdown-preview-view img {
+  display: block;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;  experiment with values
+  z-index: 999;
+  transition:transform 1.25s ease;
+}
+
+/* image border-shadowing on hover */  
+/* .markdown-preview-view img {
+	 margin: inherit auto;
+	 position: relative !important;
+	 top: 1px !important;
+	 transition: box-shadow, top .3s;
+
+}*/
+.markdown-preview-view img:hover {
+	-webkit-transform:scale(1.3); experiment with values
+	transform:scale(2);
+	box-shadow: 0 5px 6px #ada7a794;
+	top: -2px !important;
+	z-index: 9999;
+
+}
+ 
